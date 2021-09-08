@@ -1,0 +1,88 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #fff;
+}
+.sidebar{
+    -fx-background-color: #333645;
+    -fx-background-radius: 40 0 0 40;
+}
+.btns{
+    -fx-background-color: transparent;
+    
+
+    
+}
+.btns:hover{
+    -fx-background-color: #202332;
+    -fx-text-fill: #fff;
+}
+
+
+.box{
+    -fx-border-color: #7c8184;
+    -fx-border-width: 1px 0px 0px 0px;
+}
+.most-contacted-layout{
+    -fx-background-radius: 0 50 50 50;
+     
+}
+.lbl{
+    -fx-background-radius: 40 0 0 0;
+}
+.search{
+    -fx-text-fill: #fff;
+}
+.anchor{
+    -fx-background-radius: 0 40 40 0;
+}
+.pane{
+    -fx-background-radius: 0 40 40 0;
+}
+.container{
+    -fx-background-color: rgba(255, 128, 128,0.8);
+}
+.shadow{
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2),10.0,0.0,0.0,10.0);
+}
+.table-view{
+    -fx-background-color: transparent;
+}
+.table-view:focus{
+    -fx-background-color:  transparent;
+}
+.table-view .column-header-background{
+    -fx-background-color:  linear-gradient( #FCD8D4,   #64C9CF);
+}
+.table-view .column-header-background .label{
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+.table-view .column-header {
+    -fx-background-color: transparent;
+}
+
+.table-view .table-cell{
+    -fx-text-fill: #202332;
+}
+
+.table-row-cell{
+    -fx-background-color: rgba(138, 204, 210, 0.5);
+    -fx-background-insets: 0, 0 0 1 0;
+    -fx-padding: 0.0em; /* 0 */
+}
+
+.btnLogout{
+    -fx-background-color: linear-gradient(to top left,#FCD8D4,   #64C9CF);
+    
+ 
+}
+.btnLogout:hover{
+    -fx-background-color: linear-gradient(to top left,   #64C9CF,#FCD8D4);
+
+}
+.btnLogout:pressed{
+        -fx-background-color: linear-gradient(to top left,#FCD8D4,   #64C9CF);
+}

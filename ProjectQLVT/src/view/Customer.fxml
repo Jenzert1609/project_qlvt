@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="919.0" style="-fx-background-color: #333645; -fx-background-radius: 0 40 40 0;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerController">
+    <children>
+        <Pane layoutX="10.0" layoutY="8.0" prefHeight="584.0" prefWidth="900.0" style="-fx-background-color: #ffc28c; -fx-background-radius: 40 40 40 40;">
+            <TableView fx:id="tablecusview" layoutX="62.0" layoutY="366.0" onMouseClicked="#clickTable" prefHeight="176.0" prefWidth="770.0">
+                <columns>
+                    <TableColumn fx:id="tblname" prefWidth="185.99999237060547" style="-fx-background-color: linear-gradient( #FCD8D4,   #64C9CF); -fx-alignment: center;" text="Name" />
+                    <TableColumn fx:id="tblphone" prefWidth="108.0" style="-fx-background-color: linear-gradient( #FCD8D4,   #64C9CF); -fx-alignment: center;" text="Phone" />
+                    <TableColumn fx:id="tblemail" minWidth="0.0" prefWidth="195.33334350585938" style="-fx-background-color: linear-gradient( #FCD8D4,   #64C9CF); -fx-alignment: center;" text="Email" />
+                    <TableColumn fx:id="tbladdress" prefWidth="156.0" style="-fx-background-color: linear-gradient( #FCD8D4,   #64C9CF); -fx-alignment: center;" text="Address" />
+                    <TableColumn fx:id="tbldelete" minWidth="0.0" prefWidth="124.66668701171875" style="-fx-background-color: linear-gradient( #FCD8D4,   #64C9CF); -fx-alignment: center;" />
+                </columns>
+            </TableView>
+            <Label layoutX="88.0" layoutY="88.0" prefHeight="27.0" prefWidth="92.0" text="Name " />
+            <TextField fx:id="txtname" layoutX="86.0" layoutY="118.0" />
+            <Label layoutX="88.0" layoutY="181.0" prefHeight="27.0" prefWidth="92.0" text="Phone" />
+            <TextField fx:id="txtaddress" layoutX="346.0" layoutY="209.0" />
+            <TextField fx:id="txtphone" layoutX="86.0" layoutY="209.0" />
+            <Label layoutX="335.0" layoutY="88.0" prefHeight="27.0" prefWidth="92.0" text="Email" />
+            <Label layoutX="346.0" layoutY="181.0" prefHeight="27.0" prefWidth="92.0" text="Address" />
+            <TextField fx:id="txtemail" layoutX="335.0" layoutY="118.0" />
+            <JFXButton fx:id="btnsearch" buttonType="RAISED" layoutX="551.0" layoutY="93.0" onAction="#SearchAction" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #96BAFF; -fx-background-radius: 15;" text="SEARCH" />
+            <JFXButton fx:id="btninsert" buttonType="RAISED" layoutX="551.0" layoutY="162.0" onAction="#insertAction" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #E8E46E; -fx-background-radius: 15;" text="INSERT" />
+            <JFXButton fx:id="btnup" buttonType="RAISED" layoutX="551.0" layoutY="228.0" onAction="#UpdateAction" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #EBA83A; -fx-background-radius: 15;" text="UPDATE" />
+            <JFXButton fx:id="btnclear" buttonType="RAISED" layoutX="551.0" layoutY="292.0" onAction="#ClearAction" prefHeight="38.0" prefWidth="110.0" style="-fx-background-color: #F6A9A9; -fx-background-radius: 15;" text="CLEAR" />
+            <ImageView fitHeight="105.0" fitWidth="197.0" layoutX="683.0" pickOnBounds="true" preserveRatio="true">
+                <image>
+                    <Image url="@../image/LogoConn.png" />
+                </image>
+            </ImageView>
+         <ImageView fitHeight="87.0" fitWidth="81.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+               <Image url="@../image/Logo3.png" />
+            </image>
+         </ImageView>
+         <TextField fx:id="txtid" layoutX="86.0" layoutY="280.0" />
+         <Label layoutX="88.0" layoutY="247.0" prefHeight="27.0" prefWidth="92.0" text="ID" />
+        </Pane>
+    </children>
+</AnchorPane>

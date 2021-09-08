@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="boderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="1100.0" style="-fx-background-color: transparent;" styleClass="borderpane" stylesheets="@../css/menuui.css" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuUIController">
+   <left>
+      <VBox prefHeight="600.0" prefWidth="180.0" styleClass="sidebar" BorderPane.alignment="CENTER">
+         <children>
+            <Label alignment="CENTER" opacity="0.94" prefHeight="49.0" prefWidth="180.0" styleClass="lbl" text="MATERIAL" textFill="#ffdada">
+               <font>
+                  <Font name="Bauhaus 93" size="23.0" />
+               </font>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets top="20.0" />
+               </padding>
+            </Label>
+            <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" opacity="0.94" prefHeight="32.0" prefWidth="180.0" styleClass="lbl" text="MANAGEMENT" textFill="#ffdada">
+               <font>
+                  <Font name="Bauhaus 93" size="23.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="70.0" prefWidth="173.0" styleClass="btns">
+               <children>
+                  <FontAwesomeIconView glyphName="DASHBOARD" glyphStyle="-fx-fill:#7c8184" size="20">
+                     <HBox.margin>
+                        <Insets left="30.0" right="15.0" top="23.0" />
+                     </HBox.margin>
+                     
+                  </FontAwesomeIconView>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#DashBoard" prefHeight="73.0" prefWidth="115.0" styleClass="btns" text="DASHBOARD" textFill="#b7b3b3">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="25.0" />
+                     </padding>
+                     
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="132.0" prefHeight="70.0" prefWidth="173.0" styleClass="btns">
+               <children>
+                  <FontAwesomeIconView glyphName="FOLDER" glyphStyle="-fx-fill:#7c8184" size="20" wrappingWidth="20.578115463256836">
+                     <HBox.margin>
+                        <Insets left="30.0" right="15.0" top="23.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#page1" prefHeight="70.0" prefWidth="113.0" styleClass="btns" text="ORDER" textFill="#b7b3b3">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="25.0" />
+                     </padding>
+                     
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="177.0" prefHeight="70.0" prefWidth="173.0" styleClass="btns">
+               <children>
+                  <FontAwesomeIconView glyphName="XING" glyphStyle="-fx-fill:#7c8184" size="20">
+                     <HBox.margin>
+                        <Insets left="30.0" right="15.0" top="23.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#page2" prefHeight="70.0" prefWidth="113.0" styleClass="btns" text="WAREHOUSE" textFill="#b7b3b3">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="25.0" />
+                     </padding>
+                     
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="223.0" prefHeight="70.0" prefWidth="173.0" styleClass="btns">
+               <children>
+                  <FontAwesomeIconView glyphName="BOOK" glyphStyle="-fx-fill:#7c8184" size="20" text="">
+                     <HBox.margin>
+                        <Insets left="32.0" right="15.0" top="23.0" />
+                     </HBox.margin>
+                     
+                              </FontAwesomeIconView>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#page3" prefHeight="70.0" prefWidth="113.0" styleClass="btns" text="CUSTOMER" textFill="#b7b3b3">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="25.0" />
+                     </padding>
+                     
+                  </Button>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="265.0" prefHeight="70.0" prefWidth="173.0" styleClass="btns">
+               <children>
+                  <FontAwesomeIconView glyphName="USERS" glyphStyle="-fx-fill:#7c8184" size="20">
+                     <HBox.margin>
+                        <Insets left="32.0" right="15.0" top="23.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#page4" prefHeight="70.0" prefWidth="111.0" styleClass="btns" text="STAFF" textFill="#b7b3b3">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="25.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="70.0" prefWidth="173.0" styleClass="btns">
+               <children>
+                  <FontAwesomeIconView glyphName="LIST" glyphStyle="-fx-fill:#7c8184" size="20">
+                     <HBox.margin>
+                        <Insets left="32.0" right="15.0" top="23.0" />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <Button alignment="TOP_LEFT" mnemonicParsing="false" onMouseClicked="#page5" prefHeight="70.0" prefWidth="111.0" styleClass="btns" text="REVENUE" textFill="#b7b3b3">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <padding>
+                        <Insets top="25.0" />
+                     </padding>
+                  </Button>
+               </children>
+            </HBox>
+            <Button fx:id="btnLogout" mnemonicParsing="false" onMouseClicked="#btnLogout" prefHeight="44.0" prefWidth="180.0" style="-fx-background-radius: 0 20 20 0; -fx-text-fill: #000;" styleClass="btnLogout" text="LOGOUT">
+               <VBox.margin>
+                  <Insets top="4.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </left>
+   <center>
+      <AnchorPane fx:id="contentArea" prefHeight="600.0" prefWidth="919.0" style="-fx-background-color: #333645;" styleClass="anchor" BorderPane.alignment="CENTER">
+         <children>
+            <Pane fx:id="ap" layoutX="10.0" layoutY="10.0" prefHeight="582.0" prefWidth="901.0" style="-fx-background-radius: 40 40 40 40; -fx-background-color: #ffe8eb;" AnchorPane.bottomAnchor="8.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="9.0" AnchorPane.topAnchor="10.0">
+               <children>
+                  <LineChart fx:id="linechart" layoutX="40.0" layoutY="12.0" legendVisible="false" prefHeight="325.0" prefWidth="830.0" styleClass="shadow" stylesheets="@../css/menuui.css">
+                    <xAxis>
+                      <CategoryAxis side="BOTTOM" tickLabelFill="#514d4d" />
+                    </xAxis>
+                    <yAxis>
+                      <NumberAxis side="LEFT" tickLabelFill="#454343" />
+                    </yAxis>
+                  </LineChart>
+               </children></Pane>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>
